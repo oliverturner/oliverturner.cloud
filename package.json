@@ -1,0 +1,11 @@
+{
+  "name": "static",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Oliver Turner <oliver.turner@codedsignal.co.uk>",
+  "license": "MIT",
+  "dependencies": {
+    "@11ty/eleventy": "0.8.3",
+    "postcss-preset-env": "6.7.0"
+  }
+}
