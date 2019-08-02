@@ -4,12 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#fff">
+  <meta name="description" content="The online home of Oliver Turner">
   <title>{{ title }}</title>
   <link rel="stylesheet" href="/app.css">
+  <link rel="manifest" href="/static/manifest.json">
+  <link rel="favicon" href="/static/images/favicon-192.png">
+  <link rel="apple-touch-icon" href="/static/images/favicon-512.png">
 </head>
 <body>
   {{ content | safe }}
 
   {% include "partials/spritesheet.njk" %}
+  
+  {% if config.isProd %}  
+  <script>
+    // Check that service workers are supported
+    if ('serviceWorker' in navigator) {
+      // Use the window load event to keep the page load performant
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js');
+      });
+    }
+  </script>
+  {% endif %}
 </body>
 </html>

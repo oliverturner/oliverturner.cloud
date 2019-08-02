@@ -4,7 +4,7 @@
 
   list-style: none;
   margin: 20px 0 0;
-  padding: 15px 45px 0;
+  padding: 20px 15px 0;
   border-top: 1px dotted currentColor;
 }
 
@@ -12,15 +12,14 @@
   transition: 0.3s color, 0.3s transform;
   will-change: transform;
 
+  overflow: hidden;
   display: block;
   width: 28px;
   height: 28px;
-  overflow: hidden;
 }
 
 .icon__link:hover {
   transform: scale3d(1.5, 1.5, 1);
-  /* color: var(--tint3); */
 }
 
 .icon__link svg {

@@ -1,20 +1,17 @@
 .app__footer {
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
+  display: none;
 
-  width: 100%;
-  padding: 5px;
-  font-size: 80%;
-  font-weight: 300;
-  background: #00000088;
-  color: orange;
-}
-
-/* Status */
-@keyframes slide {
-  100% {
-    transform: translate3d(0, 0, 0);
+  @media (--mq-medium) {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+  
+    width: 100%;
+    padding: 5px;
+    font-size: 80%;
+    font-weight: 300;
+    background: #00000088;
+    color: orange;
   }
 }
 

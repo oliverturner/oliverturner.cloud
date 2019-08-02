@@ -1,6 +1,5 @@
 .app {
   display: grid;
-  grid-template-rows: 1fr auto;
 
   height: 100vh;
   background: url("/static/images/palms.svg");
@@ -9,6 +8,7 @@
   background-position: 50% -100px;
 
   @media (min-width: 640px) {
+    grid-template-rows: 1fr auto;
     background-position: center bottom;
   }
 

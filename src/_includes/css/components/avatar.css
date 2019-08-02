@@ -9,7 +9,6 @@
   margin: 0 auto var(--avatar-y);
   border-radius: 999px;
   border: 10px solid var(--border-color);
-  background: var(--border-color);
   background: transparent;
 }
 
