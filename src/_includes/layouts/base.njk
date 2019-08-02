@@ -16,17 +16,7 @@
   {{ content | safe }}
 
   {% include "partials/spritesheet.njk" %}
+  {% include "partials/service-worker.njk" %}
   
-  {% if config.isProd %}  
-  <script>
-    // Check that service workers are supported
-    if ('serviceWorker' in navigator) {
-      // Use the window load event to keep the page load performant
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js');
-      });
-    }
-  </script>
-  {% endif %}
 </body>
 </html>
