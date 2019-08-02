@@ -1,0 +1,9 @@
+@import "./partials/globals.css";
+@import "./partials/typography.css";
+@import "./partials/animations.css";
+
+@import "./components/app.css";
+@import "./components/avatar.css";
+@import "./components/content.css";
+@import "./components/footer.css";
+@import "./components/links.css";

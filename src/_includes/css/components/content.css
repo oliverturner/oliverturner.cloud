@@ -1,0 +1,29 @@
+.app__content {
+  padding: var(--content-pt) 15px;
+  background: var(--tint5);
+
+  @media (min-width: 640px) {
+    --top: var(--tint5);
+    --bottom: #9e70a3;
+    --bottom: turquoise;
+
+    margin: auto;
+    padding: var(--content-pt) 30px var(--content-pb);
+    background: linear-gradient(to bottom, var(--top) 50%, var(--bottom) 110%);
+    box-shadow: 0 15px 25px #00000088;
+  }
+}
+
+.app__title {
+  margin: 0;
+  padding: 0 15px;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+.app__subtitle {
+  margin: 10px 0;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}

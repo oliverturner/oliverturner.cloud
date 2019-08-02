@@ -1,0 +1,60 @@
+:root {
+  --avatar-wh: 200px;
+  --avatar-y: calc(var(--avatar-wh) * -0.5);
+  --content-pt: calc(var(--avatar-y) * -1.25);
+  --content-pb: calc(var(--content-pt) * 0.5);
+  --tint1: #a8a6ea;
+  --tint2: #7c295d;
+  --tint3: #fff;
+  --tint4: #fff382;
+  --tint5: #ffefd5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  --top: var(--tint1);
+  --bottom: var(--tint2);
+  --stripe: #ffffff33;
+
+  font-family: system-ui;
+
+  background: 
+    repeating-linear-gradient(
+      135deg,
+      var(--stripe),
+      var(--stripe) 100px,
+      transparent 100px,
+      transparent 200px
+    ),
+    linear-gradient(135deg, var(--top) 0%, var(--bottom) 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+
+  @media (min-width: 640px) {
+    background-size: 100% 50%, cover;
+  }
+}
+
+a {
+  color: inherit;
+}
+
+.unlist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.spritesheet {
+  display: none;
+}

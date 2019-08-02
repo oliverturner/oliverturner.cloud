@@ -1,0 +1,20 @@
+.avatar {
+  --border-color: var(--tint5);
+  --border-color: turquoise;
+
+  position: relative;
+  overflow: hidden;
+  width: var(--avatar-wh);
+  height: var(--avatar-wh);
+  margin: 0 auto var(--avatar-y);
+  border-radius: 999px;
+  border: 10px solid var(--border-color);
+  background: var(--border-color);
+  background: transparent;
+}
+
+.avatar img {
+  display: block;
+  max-height: 100%;
+  object-fit: cover;
+}

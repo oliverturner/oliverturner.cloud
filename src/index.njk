@@ -1,5 +1,55 @@
 ---
 title: "Hello World"
+layout: "layouts/base.njk"
 ---
 
-Hello World
+<div class="app">
+  <main class="app__header">
+    <figure class="avatar">
+      <img src="/static/images/avatar.png" alt="Oliver Turner" />
+    </figure>
+    <div class="app__content">
+      <h1 class="app__title">Oliver Turner</h1>
+      <p class="app__subtitle">Front End Architect</p>
+      <ul class="icons">
+        <li>
+          <a
+            class="icon__link"
+            href="https://twitter.com/oliverturner"
+            rel="me"
+          >
+            <svg><use href="#icon-twitter"></use></svg>
+            <p>Twitter</p>
+          </a>
+        </li>
+        <li>
+          <a class="icon__link" href="https://github.com/oliverturner" rel="me">
+            <svg><use href="#icon-github"></use></svg>
+            <p>Github</p>
+          </a>
+        </li>
+        <li>
+          <a
+            class="icon__link"
+            href="mailto:oliver.turner@codedsignal.co.uk"
+            rel="me">
+            <svg><use href="#icon-email"></use></svg>
+            <p>Email</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </main>
+  <footer class="app__footer">
+    <p class="footer__item">
+      Version: 1.0.0
+    </p>
+    <div class="status">
+      <p class="status__item status__item--key">status:</p>
+      <p class="status__item status__item--label">
+        <span class="status__item__msg">extremely here for this</span>
+      </p>
+    </div>
+    <p class="footer__item">Vapourwave edition</p>
+  </footer>
+</div>
