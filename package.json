@@ -22,6 +22,7 @@
     "prod:build": "NODE_ENV=production eleventy",
     "prod:critical": "node ./tools/critical",
     "prod:sw": "workbox generateSW ./tools/workbox-config.js",
+    "prod:headers": "cp ./tools/_headers ./_site",
     "build": "run-s clean prod:*",
     "test:serve": "serve _site",
     "test": "run-s clean prod:* test:*"

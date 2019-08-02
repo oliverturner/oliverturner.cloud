@@ -12,6 +12,17 @@
 
 ## Commands
 
-Develop: `yarn dev`
-Preview: `yarn test`
-Deploy: `yarn build`
+Develop: 
+```bash
+yarn dev
+```
+
+Preview: 
+```bash
+yarn test
+```
+
+Deploy: 
+```bash
+yarn build
+```
