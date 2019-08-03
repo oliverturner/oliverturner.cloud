@@ -7,7 +7,7 @@
   [headers.values]
     Content-Security-Policy = '''
       default-src 'self'; 
-      script-src https://www.oliverturner.cloud https://www.oliverturner.dev https://www.codedsignal.co.uk https://*oliverturner.netlify.com google.com
+      script-src 'self' google.com
     '''
     Feature-Policy = "usermedia self"
     Referrer-Policy = "same-origin"
