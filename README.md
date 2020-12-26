@@ -26,3 +26,21 @@ Deploy:
 ```sh
 npm run build
 ```
+
+## NEW
+
+Get a JSON-encoded list of Netlify apps:
+```sh
+ntl sites:list --json > _data/sites-raw.json
+```
+Extract useful values by piping the raw `sites` data through [jq](https://stedolan.github.io/jq/)
+```sh
+jq '[.[] | {
+  label:.custom_domain,
+  url,
+  screenshot_url,
+  repo_url:.build_settings.repo_url,
+  created_at,
+  updated_at
+}]' _data/sites-raw.json > _data/sites.json
+```
