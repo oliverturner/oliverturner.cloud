@@ -5,15 +5,15 @@
   "author": "Oliver Turner <oliver.turner@codedsignal.co.uk>",
   "license": "MIT",
   "dependencies": {
-    "@11ty/eleventy": "0.8.3",
-    "critical": "1.3.4",
+    "@11ty/eleventy": "0.11.1",
+    "critical": "2.0.6",
     "npm-run-all": "4.1.5",
-    "postcss": "7.0.17",
-    "postcss-cli": "6.1.3",
-    "postcss-import": "12.0.1",
+    "postcss": "8.2.1",
+    "postcss-cli": "8.3.1",
+    "postcss-import": "14.0.0",
     "postcss-preset-env": "6.7.0",
-    "serve": "11.1.0",
-    "workbox-cli": "4.3.1"
+    "serve": "11.3.2",
+    "workbox-cli": "6.0.2"
   },
   "scripts": {
     "clean": "rm -rf _site",
@@ -25,5 +25,8 @@
     "build": "run-s clean prod:*",
     "test:serve": "serve _site",
     "test": "run-s clean prod:* test:*"
+  },
+  "volta": {
+    "node": "14.15.3"
   }
 }
