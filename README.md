@@ -14,15 +14,15 @@
 
 Develop: 
 ```sh
-yarn dev
+npm run dev
 ```
 
 Preview: 
 ```sh
-yarn test
+npm test
 ```
 
 Deploy: 
 ```sh
-yarn build
+npm run build
 ```
