@@ -4,6 +4,10 @@
   "main": "index.js",
   "author": "Oliver Turner <oliver.turner@codedsignal.co.uk>",
   "license": "MIT",
+  "engines": {
+    "node": "12",
+    "npm": "7"
+  },
   "dependencies": {
     "@11ty/eleventy": "0.11.1",
     "critical": "3.0.0",
