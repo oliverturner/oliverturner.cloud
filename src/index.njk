@@ -6,7 +6,12 @@ layout: "layouts/base.njk"
 <div class="app">
   <main class="app__header">
     <figure class="avatar">
-      <img src="/static/images/avatar.png" alt="Oliver Turner" />
+      <picture>
+        <source type="image/avif" srcset="/static/images/avatar.avif" />
+        <source type="image/webp" srcset="/static/images/avatar.webp" />
+        <source type="image/png" srcset="/static/images/avatar.png" />
+        <img src="/static/images/avatar.png" alt="Oliver Turner" />
+      </picture>
     </figure>
     <div class="app__content">
       <h1 class="app__title">Oliver Turner</h1>
@@ -18,13 +23,13 @@ layout: "layouts/base.njk"
             href="https://twitter.com/oliverturner"
             rel="me"
           >
-            <svg><use href="#icon-twitter"></use></svg>
+            <svg><use href="/static/images/icons.svg#icon-twitter"></use></svg>
             <p>Twitter</p>
           </a>
         </li>
         <li>
           <a class="icon__link" href="https://github.com/oliverturner" rel="me">
-            <svg><use href="#icon-github"></use></svg>
+            <svg><use href="/static/images/icons.svg#icon-github"></use></svg>
             <p>Github</p>
           </a>
         </li>
@@ -33,7 +38,7 @@ layout: "layouts/base.njk"
             class="icon__link"
             href="mailto:oliver.turner@codedsignal.co.uk"
             rel="me">
-            <svg><use href="#icon-email"></use></svg>
+            <svg><use href="/static/images/icons.svg#icon-email"></use></svg>
             <p>Email</p>
           </a>
         </li>
